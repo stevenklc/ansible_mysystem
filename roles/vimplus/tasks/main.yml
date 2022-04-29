@@ -1,0 +1,13 @@
+- name: Download Vimplus
+  ansible.builtin.git:
+    repo: 'https://github.com/chxuan/vimplus.git'
+    dest: /home/$USER/.vimplus
+    
+
+- name: Install Vimplus    
+  shell:
+    cmd: /home/$USER/.vimplus/install.sh << EOF
+         y
+
+         EOF
+

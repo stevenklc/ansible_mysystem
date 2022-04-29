@@ -1,4 +1,4 @@
-- host: server
+- hosts: server
   roles:
     - { role: apt, become: yes }
-    - { role: ansible-init, become: yes }
+    - { role: vimplus, become: no }
