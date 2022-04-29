@@ -1,0 +1,4 @@
+- name: Install Ansible-lint
+  pip:
+    name: ansible-lint
+    executable: pip3
