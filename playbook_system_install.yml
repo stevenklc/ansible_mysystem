@@ -1,0 +1,4 @@
+- host: server
+  roles:
+    - { role: apt, become: yes }
+    - { role: ansible-init, become: yes }
